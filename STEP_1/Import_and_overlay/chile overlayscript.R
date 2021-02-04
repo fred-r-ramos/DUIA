@@ -2,7 +2,10 @@ library(sf)
 library(tidyverse)
 library(dplyr)
 library(ipumsr)
-setwd("C:/Users/Gebruiker/Dropbox/Countriesoverlay David/overlay chile")
+library(ggplot2)
+
+###set the working directory where all the dataset are located (IPUMS, Second level Administrative Shapefile, AUE Study area)
+setwd("   ")
 
 geo2_cl1992 <- read_sf("geo2_cl1992.shp")
 geo2_cl2002 <- read_sf("geo2_cl2002.shp")
