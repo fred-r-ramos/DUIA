@@ -7,3 +7,7 @@ https://international.ipums.org/international-action/variables/group
 Each extraction generates a multitemporal country wide census sample which includes Second Level Administrative code (GEO2_) used to match the geodataset that can be downloaded directly in IPUMS supplemental data.
 
 https://international.ipums.org/international/gis_yrspecific_2nd.shtml 
+
+The GIS layers corresponding to the study area from the Atlas of Urban Expansion are available at:
+
+http://atlasofurbanexpansion.org/data
