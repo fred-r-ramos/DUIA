@@ -3,7 +3,9 @@ library(tidyverse)
 library(dplyr)
 library(ipumsr)
 library(ggplot2)
-setwd("C:/Users/Gebruiker/Dropbox/Countriesoverlay David/overlay turkey")
+
+###set the working directory where all the dataset are located (IPUMS, Second level Administrative Shapefile, AUE Study area)
+setwd("   ")
 
 geo2_tr90 <- read_sf("geo2_tr1990.shp")
 geo2_tr00 <- read_sf("geo2_tr2000.shp")
