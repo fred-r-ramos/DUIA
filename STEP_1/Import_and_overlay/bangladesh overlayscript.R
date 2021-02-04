@@ -1,7 +1,9 @@
 library(sf)
 library(tidyverse)
 library(dplyr)
-setwd("C:/Users/Gebruiker/Dropbox/Countriesoverlay David/overlay Bangladesh")
+
+###set the working directory where all the dataset are located (IPUMS, Second level Administrative Shapefile, AUE Study area)
+setwd("   ")
 
 geo2_bd1991 <- read_sf("geo2_bd1991.shp")
 geo2_bd2001 <- read_sf("geo2_bd2001.shp")
