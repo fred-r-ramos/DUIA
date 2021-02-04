@@ -164,7 +164,7 @@ names(water_china)
 names(cities_water)
 names(water_india_t)
 
-water_china <- water_china %>% dplyr::rename(CITY = ï..CITY)
+water_china <- water_china %>% dplyr::rename(CITY = Ã¯..CITY)
 water_china$CITY <- as.character(water_china$CITY)
 water_china$TIME <- as.character(water_china$TIME)
 
@@ -596,128 +596,5 @@ cities_merge_all %>% ggplot() +
 
 names(aue)
 
-##########################################################################################Saving a merged file
 
-setwd("C:/Users/fredr/Dropbox/B_POSTDOC_UvA")
-save(cities_merge_all,file="cities_merge_all.Rda")
-
-
-##########################################################################################finished!!!
-
-
-
-
-
-##########################################################################################graph bar for selected variable by Time
-
-
-
-cities_merge_all %>% filter(!is.na(P_Owned)) %>%
-  ggplot(aes(x=TIME, y=Cohesion,width=0.1,backgroundColor="white",removePanelGrid=TRUE,removePanelBorder=TRUE))+
-  facet_wrap(~CITY) +
-  geom_bar(stat="identity",position=position_dodge())+
-  ggtitle("Built Up Area") +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1)) 
-
-##############running some detailed analysis for water supply and other variables
-
-names(cities_full_sample)
-table(cities_full_sample$OWNERSHIP)
-table(cities_full_sample$WATSUP)
-
-cities_owner_water<-cities_full_sample %>% group_by (cities_full_sample$OWNERSHIP,cities_full_sample$WATSUP,cities_full_sample$TIME) %>% 
-summarize(soma = sum(PERWT))
-
-names(cities_owner_water)[1] <- "OWNERSHIP"
-names(cities_owner_water)[2] <- "WATERSUP"
-names(cities_owner_water)[3] <- "TIME"
-
-cities_owner_water <- cities_owner_water %>%  filter(OWNERSHIP==1 | OWNERSHIP==2)
-
-cities_owner_water$OWNERSHIP <- as.character(cities_owner_water$OWNERSHIP)
-
-cities_owner_water <- cities_owner_water %>% filter(WATERSUP!= 0) 
-cities_owner_water <- cities_owner_water %>% filter(WATERSUP != 99) 
-
-cities_owner_water_T1 <- cities_owner_water %>% filter(TIME=="T1") 
-cities_owner_water_T1 <- cast(cities_owner_water_T1, OWNERSHIP~WATERSUP,sum)
-
-cities_owner_water_T2 <- cities_owner_water %>% filter(TIME=="T2") 
-cities_owner_water_T2 <- cast(cities_owner_water_T2, OWNERSHIP~WATERSUP,sum)
-
-cities_owner_water_T3 <- cities_owner_water %>% filter(TIME=="T3") 
-cities_owner_water_T3 <- cast(cities_owner_water_T3, OWNERSHIP~WATERSUP,sum)
-
-names(cities_owner_water_T1)[2] <- "Yes_piped_w"
-names(cities_owner_water_T1)[3] <- "Piped_inside_w"
-names(cities_owner_water_T1)[4] <- "Piped_exclusive_w"
-names(cities_owner_water_T1)[5] <- "Piped_shared_w"
-names(cities_owner_water_T1)[6] <- "Piped_outside_w"
-names(cities_owner_water_T1)[7] <- "Piped_outside_in_build_w"
-names(cities_owner_water_T1)[8] <- "Piped_within_build_w"
-names(cities_owner_water_T1)[9] <- "Piped_outside_plot_w"
-names(cities_owner_water_T1)[10] <- "Acces_public_water_w"
-names(cities_owner_water_T1)[11] <- "No_piped_w"
-
-names(cities_owner_water_T2)[2] <- "Yes_piped_w"
-names(cities_owner_water_T2)[3] <- "Piped_inside_w"
-names(cities_owner_water_T2)[4] <- "Piped_exclusive_w"
-names(cities_owner_water_T2)[5] <- "Piped_shared_w"
-names(cities_owner_water_T2)[6] <- "Piped_outside_w"
-names(cities_owner_water_T2)[7] <- "Piped_outside_in_build_w"
-names(cities_owner_water_T2)[8] <- "Piped_within_build_w"
-names(cities_owner_water_T2)[9] <- "Piped_outside_plot_w"
-names(cities_owner_water_T2)[10] <- "Acces_public_water_w"
-names(cities_owner_water_T2)[11] <- "No_piped_w"
-
-names(cities_owner_water_T3)[2] <- "Yes_piped_w"
-names(cities_owner_water_T3)[3] <- "Piped_inside_w"
-names(cities_owner_water_T3)[4] <- "Piped_exclusive_w"
-names(cities_owner_water_T3)[5] <- "Piped_shared_w"
-names(cities_owner_water_T3)[6] <- "Piped_outside_w"
-names(cities_owner_water_T3)[7] <- "Piped_outside_in_build_w"
-names(cities_owner_water_T3)[8] <- "Piped_within_build_w"
-names(cities_owner_water_T3)[9] <- "Piped_outside_plot_w"
-names(cities_owner_water_T3)[10] <- "Acces_public_water_w"
-names(cities_owner_water_T3)[11] <- "No_piped_w"
-
-cities_owner_water_T1 <- cities_owner_water_T1 %>% mutate(Piped_inside = Yes_piped_w + Piped_inside_w)
-cities_owner_water_T2 <- cities_owner_water_T2 %>% mutate(Piped_inside = Yes_piped_w + Piped_inside_w)
-cities_owner_water_T3 <- cities_owner_water_T3 %>% mutate(Piped_inside = Yes_piped_w + Piped_inside_w)
-
-cities_owner_water_T1 <- cities_owner_water_T1 %>% mutate(Other_piped = Piped_exclusive_w + Piped_shared_w + Piped_outside_w + Piped_within_build_w + Piped_outside_in_build_w + Piped_outside_plot_w + Piped_outside_in_build_w)
-cities_owner_water_T2 <- cities_owner_water_T2 %>% mutate(Other_piped = Piped_exclusive_w + Piped_shared_w + Piped_outside_w + Piped_within_build_w + Piped_outside_in_build_w + Piped_outside_plot_w + Piped_outside_in_build_w)
-cities_owner_water_T3 <- cities_owner_water_T3 %>% mutate(Other_piped = Piped_exclusive_w + Piped_shared_w + Piped_outside_w + Piped_within_build_w + Piped_outside_in_build_w + Piped_outside_plot_w + Piped_outside_in_build_w)
-
-cities_owner_water_T1 <- cities_owner_water_T1 %>% mutate(Total = Piped_inside + Other_piped + No_piped_w)
-cities_owner_water_T2 <- cities_owner_water_T2 %>% mutate(Total = Piped_inside + Other_piped + No_piped_w)
-cities_owner_water_T3 <- cities_owner_water_T3 %>% mutate(Total = Piped_inside + Other_piped + No_piped_w)
-
-cities_owner_water_T1$P_piped_inside <- (cities_owner_water_T1$Piped_inside/cities_owner_water_T1$Total)*100
-cities_owner_water_T1$P_Other_piped <- (cities_owner_water_T1$Other_piped/cities_owner_water_T1$Total)*100
-cities_owner_water_T1$P_not_piped <- (cities_owner_water_T1$No_piped_w/cities_owner_water_T1$Total)*100
-
-cities_owner_water_T2$P_piped_inside <- (cities_owner_water_T2$Piped_inside/cities_owner_water_T2$Total)*100
-cities_owner_water_T2$P_Other_piped <- (cities_owner_water_T2$Other_piped/cities_owner_water_T2$Total)*100
-cities_owner_water_T2$P_not_piped <- (cities_owner_water_T2$No_piped_w/cities_owner_water_T2$Total)*100
-
-cities_owner_water_T3$P_piped_inside <- (cities_owner_water_T3$Piped_inside/cities_owner_water_T3$Total)*100
-cities_owner_water_T3$P_Other_piped <- (cities_owner_water_T3$Other_piped/cities_owner_water_T3$Total)*100
-cities_owner_water_T3$P_not_piped <- (cities_owner_water_T3$No_piped_w/cities_owner_water_T3$Total)*100
-
-names(cities_owner_water_T1)
-cities_owner_water_T1 <- select(cities_owner_water_T1,c("OWNERSHIP","Total","P_piped_inside","P_Other_piped","P_not_piped"))
-cities_owner_water_T2 <- select(cities_owner_water_T2,c("OWNERSHIP","Total","P_piped_inside","P_Other_piped","P_not_piped"))
-cities_owner_water_T3 <- select(cities_owner_water_T3,c("OWNERSHIP","Total","P_piped_inside","P_Other_piped","P_not_piped"))
-
-cities_owner_water_T1[1,1] = "OWNED"
-cities_owner_water_T2[1,1] = "OWNED"
-cities_owner_water_T3[1,1] = "OWNED"
-cities_owner_water_T1[2,1] = "RENTED"
-cities_owner_water_T2[2,1] = "RENTED"
-cities_owner_water_T3[2,1] = "RENTED"
-
-cities_owner_water_T1 %>% kable()
-cities_owner_water_T2 %>% kable()
-cities_owner_water_T3 %>% kable()
 
