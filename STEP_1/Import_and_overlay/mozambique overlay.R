@@ -3,7 +3,10 @@ library(tidyverse)
 library(dplyr)
 library(ipumsr)
 library(ggplot2)
-setwd("C:/Users/Gebruiker/Dropbox/Countriesoverlay David/overlay mozambique")
+
+###set the working directory where all the dataset are located (IPUMS, Second level Administrative Shapefile, AUE Study area)
+setwd("   ")
+
 geo2_mz97 <- read_sf("geo2_mz1997.shp")
 geo2_mz07 <- read_sf("geo2_mz2007.shp")
 centroid_mz97 <- st_centroid(geo2_mz97)
