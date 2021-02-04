@@ -1,0 +1,55 @@
+SAMPLES:3(hide) [samples have notes]
+
+Sample	Density	Note
+Colombia 1985	10.0%	
+Colombia 1993	10.0%	Data missing for 2 departments
+Colombia 2005	10.0%	
+VARIABLES:41(hide)
+
+Type	Variable	Label
+H	COUNTRY	Country
+H	YEAR	Year
+H	SAMPLE	IPUMS sample identifier
+H	SERIAL	Household serial number
+H	HHWT	Household weight
+H	GEO2_CO1985	Colombia, Municipality 1985 [Level 2, GIS]
+H	GEO2_CO1993	Colombia, Municipality 1993 [Level 2, GIS]
+H	GEO2_CO2005	Colombia, Municipality 2005 [Level 2, GIS]
+H	OWNERSHIP (general)	Ownership of dwelling [general version]
+H	OWNERSHIPD (detailed)	Ownership of dwelling [detailed version]
+H	ELECTRIC	Electricity
+H	WATSUP	Water supply
+H	SEWAGE	Sewage
+H	FUELCOOK	Cooking fuel
+H	PHONE	Telephone availability
+H	TRASH	Trash disposal
+H	AUTOS	Automobiles available
+H	HOTWATER	Hot water heater
+H	AIRCON	Air conditioning
+H	COMPUTER	Computer
+H	WASHER	Clothes washing machine
+H	REFRIG	Refrigerator
+H	TV	Television set
+H	RADIO	Radio in household
+H	ROOMS	Number of rooms
+H	BEDROOMS	Number of bedrooms
+H	KITCHEN	Kitchen or cooking facilities
+H	TOILET	Toilet
+H	BATHROOMS	Number of bathrooms
+H	FLOOR	Floor material
+H	WALL	Wall or building material
+H	HHTYPE	Household classification
+H	NFAMS	Number of families in household
+P	PERNUM	Person number
+P	PERWT	Person weight
+P	LIT	Literacy
+P	EDATTAIN (general)	Educational attainment, international recode [general version]
+P	EDATTAIND (detailed)	Educational attainment, international recode [detailed version]
+P	YRSCHOOL	Years of schooling
+P	EMPSTAT (general)	Activity status (employment status) [general version]
+P	EMPSTATD (detailed)	Activity status (employment status) [detailed version]
+DATA FORMAT:.dat (fixed-width text) 
+
+STRUCTURE:Rectangular (person) 
+
+ESTIMATED SIZE:1194.6 MB 

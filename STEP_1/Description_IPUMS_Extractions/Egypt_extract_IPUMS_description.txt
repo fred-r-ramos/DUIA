@@ -1,0 +1,54 @@
+SAMPLES:3(hide) [samples have notes]
+
+Sample	Density	Note
+Egypt 1986	14.1%	Excludes some large geographic areas
+Egypt 1996	10.0%	
+Egypt 2006	10.0%	
+VARIABLES:40(hide)
+
+Type	Variable	Label
+H	COUNTRY	Country
+H	YEAR	Year
+H	SAMPLE	IPUMS sample identifier
+H	SERIAL	Household serial number
+H	HHWT	Household weight
+H	GEO2_EG1986	Egypt, District 1986 [Level 1, GIS]
+H	GEO2_EG1996	Egypt, District 1996 [Level 1, GIS]
+H	GEO2_EG2006	Egypt, District 2006 [Level 1, GIS]
+H	OWNERSHIP (general)	Ownership of dwelling [general version]
+H	OWNERSHIPD (detailed)	Ownership of dwelling [detailed version]
+H	ELECTRIC	Electricity
+H	WATSUP	Water supply
+H	SEWAGE	Sewage
+H	FUELCOOK	Cooking fuel
+H	PHONE	Telephone availability
+H	CELL	Cellular phone availability
+H	INTERNET	Internet access
+H	AUTOS	Automobiles available
+H	HOTWATER	Hot water heater
+H	AIRCON	Air conditioning
+H	COMPUTER	Computer
+H	WASHER	Clothes washing machine
+H	FREEZER	Food freezer
+H	REFRIG	Refrigerator
+H	TV	Television set
+H	VCR	Videocassette recorder
+H	RADIO	Radio in household
+H	ROOMS	Number of rooms
+H	KITCHEN	Kitchen or cooking facilities
+H	TOILET	Toilet
+H	BATH	Bathing facilities
+H	HHTYPE	Household classification
+H	NFAMS	Number of families in household
+P	PERNUM	Person number
+P	PERWT	Person weight
+P	LIT	Literacy
+P	EDATTAIN (general)	Educational attainment, international recode [general version]
+P	EDATTAIND (detailed)	Educational attainment, international recode [detailed version]
+P	EMPSTAT (general)	Activity status (employment status) [general version]
+P	EMPSTATD (detailed)	Activity status (employment status) [detailed version]
+DATA FORMAT:.dat (fixed-width text) 
+
+STRUCTURE:Rectangular (person) 
+
+ESTIMATED SIZE:2248.8 MB 

@@ -1,0 +1,55 @@
+SAMPLES:3(hide)
+
+Sample	Density	Note
+Philippines 1990	10.0%	
+Philippines 2000	10.0%	
+Philippines 2010	10.0%	
+VARIABLES:41(hide)
+
+Type	Variable	Label
+H	COUNTRY	Country
+H	YEAR	Year
+H	SAMPLE	IPUMS sample identifier
+H	SERIAL	Household serial number
+H	HHWT	Household weight
+H	GEO2_PH1990	Philippines, Municipality 1990 [Level 1, GIS]
+H	GEO2_PH2000	Philippines, Municipality 2000 [Level 1, GIS]
+H	GEO2_PH2010	Philippines, Municipality 2010 [Level 1, GIS]
+H	OWNERSHIP (general)	Ownership of dwelling [general version]
+H	OWNERSHIPD (detailed)	Ownership of dwelling [detailed version]
+H	LANDOWN	Land ownership
+H	ELECTRIC	Electricity
+H	WATSUP	Water supply
+H	FUELCOOK	Cooking fuel
+H	PHONE	Telephone availability
+H	CELL	Cellular phone availability
+H	INTERNET	Internet access
+H	TRASH	Trash disposal
+H	AUTOS	Automobiles available
+H	COMPUTER	Computer
+H	WASHER	Clothes washing machine
+H	REFRIG	Refrigerator
+H	TV	Television set
+H	VCR	Videocassette recorder
+H	RADIO	Radio in household
+H	TOILET	Toilet
+H	WALL	Wall or building material
+H	ROOF	Roof material
+H	BUILTYR	Year structure was built
+H	AGESTRUCT2	Age of structure, coded from intervals
+H	LIVEAREA	Living area in square meters
+H	HHTYPE	Household classification
+H	NFAMS	Number of families in household
+P	PERNUM	Person number
+P	PERWT	Person weight
+P	LIT	Literacy
+P	EDATTAIN (general)	Educational attainment, international recode [general version]
+P	EDATTAIND (detailed)	Educational attainment, international recode [detailed version]
+P	YRSCHOOL	Years of schooling
+P	EMPSTAT (general)	Activity status (employment status) [general version]
+P	EMPSTATD (detailed)	Activity status (employment status) [detailed version]
+DATA FORMAT:.dat (fixed-width text) 
+
+STRUCTURE:Rectangular (person) 
+
+ESTIMATED SIZE:2810.2 MB 

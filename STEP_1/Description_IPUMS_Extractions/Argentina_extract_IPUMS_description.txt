@@ -1,0 +1,55 @@
+SAMPLES:3(hide) [samples have notes]
+
+Sample	Density	Note
+Argentina 1991	10.0%	Missing data for several key variables requires use of alternative weight
+Argentina 2001	10.0%	
+Argentina 2010	10.0%	
+VARIABLES:40(hide)
+
+Type	Variable	Label
+H	COUNTRY	Country
+H	YEAR	Year
+H	SAMPLE	IPUMS sample identifier
+H	SERIAL	Household serial number
+H	HHWT	Household weight
+H	GEO2_AR1991	Argentina, Department 1991 [Level 2, GIS]
+H	GEO2_AR2001	Argentina, Department 2001 [Level 2, GIS]
+H	GEO2_AR2010	Argentina, Department 2010 [Level 2, GIS]
+H	OWNERSHIP (general)	Ownership of dwelling [general version]
+H	OWNERSHIPD (detailed)	Ownership of dwelling [detailed version]
+H	LANDOWN	Land ownership
+H	ELECTRIC	Electricity
+H	WATSUP	Water supply
+H	SEWAGE	Sewage
+H	FUELCOOK	Cooking fuel
+H	PHONE	Telephone availability
+H	CELL	Cellular phone availability
+H	INTERNET	Internet access
+H	COMPUTER	Computer
+H	WASHER	Clothes washing machine
+H	REFRIG	Refrigerator
+H	VCR	Videocassette recorder
+H	ROOMS	Number of rooms
+H	BEDROOMS	Number of bedrooms
+H	KITCHEN	Kitchen or cooking facilities
+H	TOILET	Toilet
+H	BATH	Bathing facilities
+H	FLOOR	Floor material
+H	WALL	Wall or building material
+H	ROOF	Roof material
+H	HHTYPE	Household classification
+H	NFAMS	Number of families in household
+P	PERNUM	Person number
+P	PERWT	Person weight
+P	LIT	Literacy
+P	EDATTAIN (general)	Educational attainment, international recode [general version]
+P	EDATTAIND (detailed)	Educational attainment, international recode [detailed version]
+P	YRSCHOOL	Years of schooling
+P	EMPSTAT (general)	Activity status (employment status) [general version]
+P	EMPSTATD (detailed)	Activity status (employment status) [detailed version]
+
+DATA FORMAT:.dat (fixed-width text) 
+
+STRUCTURE:Rectangular (person) 
+
+ESTIMATED SIZE:1404.7 MB 

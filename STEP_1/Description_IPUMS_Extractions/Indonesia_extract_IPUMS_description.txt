@@ -1,0 +1,49 @@
+SAMPLES:3(hide)
+
+Sample	Density	Note
+Indonesia 1990	0.51%	
+Indonesia 2000	10.0%	
+Indonesia 2010	10.0%	
+VARIABLES:35(hide)
+
+Type	Variable	Label
+H	COUNTRY	Country
+H	YEAR	Year
+H	SAMPLE	IPUMS sample identifier
+H	SERIAL	Household serial number
+H	HHWT	Household weight
+H	GEO2_ID1990	Indonesia, Regency 1990 [Level 2, GIS]
+H	GEO2_ID2000	Indonesia, Regency 2000 [Level 2, GIS]
+H	GEO2_ID2010	Indonesia, Regency 2010 [Level 2, GIS]
+H	OWNERSHIP (general)	Ownership of dwelling [general version]
+H	OWNERSHIPD (detailed)	Ownership of dwelling [detailed version]
+H	LANDOWN	Land ownership
+H	ELECTRIC	Electricity
+H	WATSUP	Water supply
+H	SEWAGE	Sewage
+H	FUELCOOK	Cooking fuel
+H	PHONE	Telephone availability
+H	CELL	Cellular phone availability
+H	AUTOS	Automobiles available
+H	TV	Television set
+H	RADIO	Radio in household
+H	TOILET	Toilet
+H	BATH	Bathing facilities
+H	FLOOR	Floor material
+H	WALL	Wall or building material
+H	ROOF	Roof material
+H	HHTYPE	Household classification
+H	NFAMS	Number of families in household
+P	PERNUM	Person number
+P	PERWT	Person weight
+P	LIT	Literacy
+P	EDATTAIN (general)	Educational attainment, international recode [general version]
+P	EDATTAIND (detailed)	Educational attainment, international recode [detailed version]
+P	YRSCHOOL	Years of schooling
+P	EMPSTAT (general)	Activity status (employment status) [general version]
+P	EMPSTATD (detailed)	Activity status (employment status) [detailed version]
+DATA FORMAT:.dat (fixed-width text) 
+
+STRUCTURE:Rectangular (person) 
+
+ESTIMATED SIZE:4979.6 MB 

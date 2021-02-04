@@ -1,0 +1,47 @@
+SAMPLES:3(hide)
+
+Sample	Density	Note
+Spain 1991	5.0%	
+Spain 2001	5.0%	
+Spain 2011	10.0%	
+VARIABLES:33(hide)
+
+Type	Variable	Label
+H	COUNTRY	Country
+H	YEAR	Year
+H	SAMPLE	IPUMS sample identifier
+H	SERIAL	Household serial number
+H	HHWT	Household weight
+H	GEO2_ES1991	Spain, Province 1991 [Level 2, GIS]
+H	GEO2_ES2001	Spain, Province 2001 [Level 2, GIS]
+H	GEO2_ES2011	Spain, Province 2011 [Level 2, GIS]
+H	OWNERSHIP (general)	Ownership of dwelling [general version]
+H	OWNERSHIPD (detailed)	Ownership of dwelling [detailed version]
+H	ELECTRIC	Electricity
+H	WATSUP	Water supply
+H	SEWAGE	Sewage
+H	FUELHEAT	Fuel for heating
+H	PHONE	Telephone availability
+H	INTERNET	Internet access
+H	AUTOS	Automobiles available
+H	HOTWATER	Hot water heater
+H	HEAT	Central heating
+H	AIRCON	Air conditioning
+H	ROOMS	Number of rooms
+H	KITCHEN	Kitchen or cooking facilities
+H	TOILET	Toilet
+H	BATH	Bathing facilities
+H	HHTYPE	Household classification
+H	NFAMS	Number of families in household
+P	PERNUM	Person number
+P	PERWT	Person weight
+P	LIT	Literacy
+P	EDATTAIN (general)	Educational attainment, international recode [general version]
+P	EDATTAIND (detailed)	Educational attainment, international recode [detailed version]
+P	EMPSTAT (general)	Activity status (employment status) [general version]
+P	EMPSTATD (detailed)	Activity status (employment status) [detailed version]
+DATA FORMAT:.dat (fixed-width text) 
+
+STRUCTURE:Rectangular (person) 
+
+ESTIMATED SIZE:847.4 MB 

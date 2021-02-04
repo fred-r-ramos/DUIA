@@ -1,0 +1,46 @@
+SAMPLES:2(hide)
+
+Sample	Density	Note
+Thailand 1990	1.0%	
+Thailand 2000	1.0%	
+VARIABLES:33(hide)
+
+Type	Variable	Label
+H	COUNTRY	Country
+H	YEAR	Year
+H	SAMPLE	IPUMS sample identifier
+H	SERIAL	Household serial number
+H	HHWT	Household weight
+H	GEO2_TH1990	Thailand, District 1990 [Level 2, GIS]
+H	GEO2_TH2000	Thailand, District 2000 [Level 2, GIS]
+H	OWNERSHIP (general)	Ownership of dwelling [general version]
+H	OWNERSHIPD (detailed)	Ownership of dwelling [detailed version]
+H	LANDOWN	Land ownership
+H	ELECTRIC	Electricity
+H	WATSUP	Water supply
+H	FUELCOOK	Cooking fuel
+H	PHONE	Telephone availability
+H	AUTOS	Automobiles available
+H	AIRCON	Air conditioning
+H	WASHER	Clothes washing machine
+H	REFRIG	Refrigerator
+H	TV	Television set
+H	VCR	Videocassette recorder
+H	RADIO	Radio in household
+H	BEDROOMS	Number of bedrooms
+H	KITCHEN	Kitchen or cooking facilities
+H	TOILET	Toilet
+H	WALL	Wall or building material
+H	HHTYPE	Household classification
+H	NFAMS	Number of families in household
+P	PERNUM	Person number
+P	PERWT	Person weight
+P	LIT	Literacy
+P	EDATTAIN (general)	Educational attainment, international recode [general version]
+P	EDATTAIND (detailed)	Educational attainment, international recode [detailed version]
+P	YRSCHOOL	Years of schooling
+DATA FORMAT:.dat (fixed-width text) 
+
+STRUCTURE:Rectangular (person) 
+
+ESTIMATED SIZE:109.1 MB 

@@ -1,0 +1,50 @@
+SAMPLES:3(hide)
+
+Sample	Density	Note
+Kenya 1989	5.0%	
+Kenya 1999	5.0%	
+Kenya 2009	10.0%	
+VARIABLES:36(hide)
+
+Type	Variable	Label
+H	COUNTRY	Country
+H	YEAR	Year
+H	SAMPLE	IPUMS sample identifier
+H	SERIAL	Household serial number
+H	HHWT	Household weight
+H	GEO2_KE1989	Kenya, District 1989 [Level 2, GIS]
+H	GEO2_KE1999	Kenya, District 1999 [Level 2, GIS]
+H	GEO2_KE2009	Kenya, District 2009 [Level 2, GIS]
+H	OWNERSHIP (general)	Ownership of dwelling [general version]
+H	OWNERSHIPD (detailed)	Ownership of dwelling [detailed version]
+H	ELECTRIC	Electricity
+H	WATSUP	Water supply
+H	SEWAGE	Sewage
+H	FUELCOOK	Cooking fuel
+H	PHONE	Telephone availability
+H	CELL	Cellular phone availability
+H	AUTOS	Automobiles available
+H	COMPUTER	Computer
+H	REFRIG	Refrigerator
+H	TV	Television set
+H	RADIO	Radio in household
+H	ROOMS	Number of rooms
+H	TOILET	Toilet
+H	FLOOR	Floor material
+H	WALL	Wall or building material
+H	ROOF	Roof material
+H	HHTYPE	Household classification
+H	NFAMS	Number of families in household
+P	PERNUM	Person number
+P	PERWT	Person weight
+P	LIT	Literacy
+P	EDATTAIN (general)	Educational attainment, international recode [general version]
+P	EDATTAIND (detailed)	Educational attainment, international recode [detailed version]
+P	YRSCHOOL	Years of schooling
+P	EMPSTAT (general)	Activity status (employment status) [general version]
+P	EMPSTATD (detailed)	Activity status (employment status) [detailed version]
+DATA FORMAT:.dat (fixed-width text) 
+
+STRUCTURE:Rectangular (person) 
+
+ESTIMATED SIZE:711.6 MB 

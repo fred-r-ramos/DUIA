@@ -1,0 +1,38 @@
+SAMPLES:3(hide)
+
+Sample	Density	Note
+Bangladesh 1991	10.0%	
+Bangladesh 2001	10.0%	
+Bangladesh 2011	5.0%	
+VARIABLES:24(hide)
+
+Type	Variable	Label
+H	COUNTRY	Country
+H	YEAR	Year
+H	SAMPLE	IPUMS sample identifier
+H	SERIAL	Household serial number
+H	HHWT	Household weight
+H	GEO2_BD1991	Bangladesh, Zilla 1991 [Level 2, GIS]
+H	GEO2_BD2001	Bangladesh, Zilla 2001 [Level 2, GIS]
+H	GEO2_BD2011	Bangladesh, Zilla 2011 [Level 2, GIS]
+H	OWNERSHIP (general)	Ownership of dwelling [general version]
+H	OWNERSHIPD (detailed)	Ownership of dwelling [detailed version]
+H	ELECTRIC	Electricity
+H	TOILET	Toilet
+H	WALL	Wall or building material
+H	ROOF	Roof material
+H	HHTYPE	Household classification
+H	NFAMS	Number of families in household
+P	PERNUM	Person number
+P	PERWT	Person weight
+P	LIT	Literacy
+P	EDATTAIN (general)	Educational attainment, international recode [general version]
+P	EDATTAIND (detailed)	Educational attainment, international recode [detailed version]
+P	YRSCHOOL	Years of schooling
+P	EMPSTAT (general)	Activity status (employment status) [general version]
+P	EMPSTATD (detailed)	Activity status (employment status) [detailed version]
+DATA FORMAT:.dat (fixed-width text) 
+
+STRUCTURE:Rectangular (person) 
+
+ESTIMATED SIZE:2854.0 MB 

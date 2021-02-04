@@ -1,0 +1,48 @@
+SAMPLES:3(hide)
+
+Sample	Density	Note
+Greece 1991	10.0%	
+Greece 2001	10.0%	
+Greece 2011	10.0%	
+VARIABLES:34(hide)
+
+Type	Variable	Label
+H	COUNTRY	Country
+H	YEAR	Year
+H	SAMPLE	IPUMS sample identifier
+H	SERIAL	Household serial number
+H	HHWT	Household weight
+H	GEO2_GR1991	Greece, Municipality 1991 [Level 2, GIS]
+H	GEO2_GR2001	Greece, Municipality 2001 [Level 2, GIS]
+H	GEO2_GR2011	Greece, Municipality 2011 [Level 2, GIS]
+H	OWNERSHIP (general)	Ownership of dwelling [general version]
+H	OWNERSHIPD (detailed)	Ownership of dwelling [detailed version]
+H	ELECTRIC	Electricity
+H	WATSUP	Water supply
+H	SEWAGE	Sewage
+H	FUELCOOK	Cooking fuel
+H	FUELHEAT	Fuel for heating
+H	PHONE	Telephone availability
+H	INTERNET	Internet access
+H	AUTOS	Automobiles available
+H	HOTWATER	Hot water heater
+H	HEAT	Central heating
+H	ROOMS	Number of rooms
+H	KITCHEN	Kitchen or cooking facilities
+H	TOILET	Toilet
+H	BATH	Bathing facilities
+H	LIVEAREA	Living area in square meters
+H	HHTYPE	Household classification
+H	NFAMS	Number of families in household
+P	PERNUM	Person number
+P	PERWT	Person weight
+P	LIT	Literacy
+P	EDATTAIN (general)	Educational attainment, international recode [general version]
+P	EDATTAIND (detailed)	Educational attainment, international recode [detailed version]
+P	EMPSTAT (general)	Activity status (employment status) [general version]
+P	EMPSTATD (detailed)	Activity status (employment status) [detailed version]
+DATA FORMAT:.dat (fixed-width text) 
+
+STRUCTURE:Rectangular (person) 
+
+ESTIMATED SIZE:330.2 MB 

@@ -1,0 +1,51 @@
+SAMPLES:3(hide)
+
+Sample	Density	Note
+Ecuador 1990	10.0%	
+Ecuador 2001	10.0%	
+Ecuador 2010	10.0%	
+VARIABLES:37(hide)
+
+Type	Variable	Label
+H	COUNTRY	Country
+H	YEAR	Year
+H	SAMPLE	IPUMS sample identifier
+H	SERIAL	Household serial number
+H	HHWT	Household weight
+H	GEO2_EC1990	Ecuador, Canton 1990 [Level 2, GIS]
+H	GEO2_EC2001	Ecuador, Canton 2001 [Level 2, GIS]
+H	GEO2_EC2010	Ecuador, Canton 2010 [Level 2, GIS]
+H	OWNERSHIP (general)	Ownership of dwelling [general version]
+H	OWNERSHIPD (detailed)	Ownership of dwelling [detailed version]
+H	ELECTRIC	Electricity
+H	WATSUP	Water supply
+H	SEWAGE	Sewage
+H	FUELCOOK	Cooking fuel
+H	PHONE	Telephone availability
+H	CELL	Cellular phone availability
+H	INTERNET	Internet access
+H	TRASH	Trash disposal
+H	COMPUTER	Computer
+H	ROOMS	Number of rooms
+H	BEDROOMS	Number of bedrooms
+H	KITCHEN	Kitchen or cooking facilities
+H	TOILET	Toilet
+H	BATH	Bathing facilities
+H	FLOOR	Floor material
+H	WALL	Wall or building material
+H	ROOF	Roof material
+H	HHTYPE	Household classification
+H	NFAMS	Number of families in household
+P	PERNUM	Person number
+P	PERWT	Person weight
+P	LIT	Literacy
+P	EDATTAIN (general)	Educational attainment, international recode [general version]
+P	EDATTAIND (detailed)	Educational attainment, international recode [detailed version]
+P	YRSCHOOL	Years of schooling
+P	EMPSTAT (general)	Activity status (employment status) [general version]
+P	EMPSTATD (detailed)	Activity status (employment status) [detailed version]
+DATA FORMAT:.dat (fixed-width text) 
+
+STRUCTURE:Rectangular (person) 
+
+ESTIMATED SIZE:418.7 MB 

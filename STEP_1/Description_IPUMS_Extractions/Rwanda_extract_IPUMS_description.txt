@@ -1,0 +1,53 @@
+SAMPLES:3(hide)
+
+Sample	Density	Note
+Rwanda 1991	10.0%	
+Rwanda 2002	10.0%	
+Rwanda 2012	10.0%	
+VARIABLES:39(hide)
+
+Type	Variable	Label
+H	COUNTRY	Country
+H	YEAR	Year
+H	SAMPLE	IPUMS sample identifier
+H	SERIAL	Household serial number
+H	HHWT	Household weight
+H	GEO2_RW1991	Rwanda, Township 1991 [Level 2, GIS]
+H	GEO2_RW2002	Rwanda, District 2002 [Level 2, GIS]
+H	GEO2_RW2012	Rwanda, District 2012 [Level 2, GIS]
+H	OWNERSHIP (general)	Ownership of dwelling [general version]
+H	OWNERSHIPD (detailed)	Ownership of dwelling [detailed version]
+H	ELECTRIC	Electricity
+H	WATSUP	Water supply
+H	SEWAGE	Sewage
+H	FUELCOOK	Cooking fuel
+H	PHONE	Telephone availability
+H	CELL	Cellular phone availability
+H	INTERNET	Internet access
+H	TRASH	Trash disposal
+H	AUTOS	Automobiles available
+H	COMPUTER	Computer
+H	REFRIG	Refrigerator
+H	TV	Television set
+H	RADIO	Radio in household
+H	ROOMS	Number of rooms
+H	TOILET	Toilet
+H	FLOOR	Floor material
+H	WALL	Wall or building material
+H	ROOF	Roof material
+H	HHTYPE	Household classification
+H	NFAMS	Number of families in household
+P	PERNUM	Person number
+P	PERWT	Person weight
+P	RESIDENT	Residence status: de facto, de jure
+P	LIT	Literacy
+P	EDATTAIN (general)	Educational attainment, international recode [general version]
+P	EDATTAIND (detailed)	Educational attainment, international recode [detailed version]
+P	YRSCHOOL	Years of schooling
+P	EMPSTAT (general)	Activity status (employment status) [general version]
+P	EMPSTATD (detailed)	Activity status (employment status) [detailed version]
+DATA FORMAT:.dat (fixed-width text) 
+
+STRUCTURE:Rectangular (person) 
+
+ESTIMATED SIZE:305.4 MB 

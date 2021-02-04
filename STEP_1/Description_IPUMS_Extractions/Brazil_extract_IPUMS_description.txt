@@ -1,0 +1,58 @@
+SAMPLES:3(hide)
+
+Sample	Density	Note
+Brazil 1991	10.0%	
+Brazil 2000	10.0%	
+Brazil 2010	10.0%	
+VARIABLES:44(hide)
+
+Type	Variable	Label
+H	COUNTRY	Country
+H	YEAR	Year
+H	SAMPLE	IPUMS sample identifier
+H	SERIAL	Household serial number
+H	HHWT	Household weight
+H	GEO2_BR1991	Brazil, Municipality 1991 [Level 2, GIS]
+H	GEO2_BR2000	Brazil, Municipality 2000 [Level 2, GIS]
+H	GEO2_BR2010	Brazil, Municipality 2010 [Level 2, GIS]
+H	OWNERSHIP (general)	Ownership of dwelling [general version]
+H	OWNERSHIPD (detailed)	Ownership of dwelling [detailed version]
+H	LANDOWN	Land ownership
+H	ELECTRIC	Electricity
+H	WATSUP	Water supply
+H	SEWAGE	Sewage
+H	FUELCOOK	Cooking fuel
+H	PHONE	Telephone availability
+H	CELL	Cellular phone availability
+H	INTERNET	Internet access
+H	TRASH	Trash disposal
+H	AUTOS	Automobiles available
+H	AIRCON	Air conditioning
+H	COMPUTER	Computer
+H	WASHER	Clothes washing machine
+H	FREEZER	Food freezer
+H	REFRIG	Refrigerator
+H	TV	Television set
+H	VCR	Videocassette recorder
+H	RADIO	Radio in household
+H	ROOMS	Number of rooms
+H	BEDROOMS	Number of bedrooms
+H	BATHROOMS	Number of bathrooms
+H	BATH	Bathing facilities
+H	WALL	Wall or building material
+H	ROOF	Roof material
+H	HHTYPE	Household classification
+H	NFAMS	Number of families in household
+P	PERNUM	Person number
+P	PERWT	Person weight
+P	LIT	Literacy
+P	EDATTAIN (general)	Educational attainment, international recode [general version]
+P	EDATTAIND (detailed)	Educational attainment, international recode [detailed version]
+P	YRSCHOOL	Years of schooling
+P	EMPSTAT (general)	Activity status (employment status) [general version]
+P	EMPSTATD (detailed)	Activity status (employment status) [detailed version]
+DATA FORMAT:.dat (fixed-width text) 
+
+STRUCTURE:Rectangular (person) 
+
+ESTIMATED SIZE:7074.7 MB 

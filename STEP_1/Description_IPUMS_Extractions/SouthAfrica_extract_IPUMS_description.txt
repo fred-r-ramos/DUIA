@@ -1,0 +1,56 @@
+SAMPLES:4(hide) [samples have notes]
+
+Sample	Density	Note
+South Africa 1996	10.0%	19 districts in the Eastern Cape province are not organized into households -- 1.3% of file
+South Africa 2001	10.0%	
+South Africa 2007	2.0%	
+South Africa 2011	8.6%	
+VARIABLES:41(hide)
+
+Type	Variable	Label
+H	COUNTRY	Country
+H	YEAR	Year
+H	SAMPLE	IPUMS sample identifier
+H	SERIAL	Household serial number
+H	HHWT	Household weight
+H	GEO2_ZA1996	South Africa, District council 1996 [Level 2, GIS]
+H	GEO2_ZA2001	South Africa, District council 2001 [Level 2, GIS]
+H	GEO2_ZA2007	South Africa, District council 2007 [Level 2, GIS]
+H	GEO2_ZA2011	South Africa, District council 2011 [Level 2, GIS]
+H	OWNERSHIP (general)	Ownership of dwelling [general version]
+H	OWNERSHIPD (detailed)	Ownership of dwelling [detailed version]
+H	ELECTRIC	Electricity
+H	WATSUP	Water supply
+H	SEWAGE	Sewage
+H	FUELCOOK	Cooking fuel
+H	FUELHEAT	Fuel for heating
+H	PHONE	Telephone availability
+H	CELL	Cellular phone availability
+H	INTERNET	Internet access
+H	TRASH	Trash disposal
+H	AUTOS	Automobiles available
+H	COMPUTER	Computer
+H	WASHER	Clothes washing machine
+H	REFRIG	Refrigerator
+H	TV	Television set
+H	RADIO	Radio in household
+H	ROOMS	Number of rooms
+H	BEDROOMS	Number of bedrooms
+H	TOILET	Toilet
+H	WALL	Wall or building material
+H	ROOF	Roof material
+H	HHTYPE	Household classification
+H	NFAMS	Number of families in household
+P	PERNUM	Person number
+P	PERWT	Person weight
+P	RESIDENT	Residence status: de facto, de jure
+P	EDATTAIN (general)	Educational attainment, international recode [general version]
+P	EDATTAIND (detailed)	Educational attainment, international recode [detailed version]
+P	YRSCHOOL	Years of schooling
+P	EMPSTAT (general)	Activity status (employment status) [general version]
+P	EMPSTATD (detailed)	Activity status (employment status) [detailed version]
+DATA FORMAT:.dat (fixed-width text) 
+Change
+STRUCTURE:Rectangular (person) 
+Change
+ESTIMATED SIZE:1576.3 MB 

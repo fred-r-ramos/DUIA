@@ -1,0 +1,50 @@
+SAMPLES:3(hide) [samples have notes]
+
+Sample	Density	Note
+Ethiopia 1984	10.0%	Missing geographic areas from difficult enumeration areas, see detailed sample documentation
+Ethiopia 1994	10.0%	
+Ethiopia 2007	10.0%	Short-questionnaire recipients lack many variables
+VARIABLES:36(hide)
+
+Type	Variable	Label
+H	COUNTRY	Country
+H	YEAR	Year
+H	SAMPLE	IPUMS sample identifier
+H	SERIAL	Household serial number
+H	HHWT	Household weight
+H	FORMTYPE	Questionnaire type received by household
+H	GEO2_ET1984	Ethiopia, Awraja 1984 [Level 2, GIS]
+H	GEO2_ET1994	Ethiopia, Zone 1994 [Level 2, GIS]
+H	GEO2_ET2007	Ethiopia, Zone 2007 [Level 2, GIS]
+H	OWNERSHIP (general)	Ownership of dwelling [general version]
+H	OWNERSHIPD (detailed)	Ownership of dwelling [detailed version]
+H	ELECTRIC	Electricity
+H	WATSUP	Water supply
+H	FUELCOOK	Cooking fuel
+H	PHONE	Telephone availability
+H	TRASH	Trash disposal
+H	TV	Television set
+H	RADIO	Radio in household
+H	ROOMS	Number of rooms
+H	KITCHEN	Kitchen or cooking facilities
+H	TOILET	Toilet
+H	BATH	Bathing facilities
+H	FLOOR	Floor material
+H	WALL	Wall or building material
+H	ROOF	Roof material
+H	HHTYPE	Household classification
+H	NFAMS	Number of families in household
+P	PERNUM	Person number
+P	PERWT	Person weight
+P	RESIDENT	Residence status: de facto, de jure
+P	LIT	Literacy
+P	EDATTAIN (general)	Educational attainment, international recode [general version]
+P	EDATTAIND (detailed)	Educational attainment, international recode [detailed version]
+P	YRSCHOOL	Years of schooling
+P	EMPSTAT (general)	Activity status (employment status) [general version]
+P	EMPSTATD (detailed)	Activity status (employment status) [detailed version]
+DATA FORMAT:.dat (fixed-width text) 
+
+STRUCTURE:Rectangular (person) 
+
+ESTIMATED SIZE:1802.5 MB 
