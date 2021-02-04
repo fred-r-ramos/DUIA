@@ -3,7 +3,9 @@ library(tidyverse)
 library(dplyr)
 library(ipumsr)
 library(ggplot2)
-setwd("C:/Users/Gebruiker/Dropbox/Countriesoverlay David/overlay argentina")
+
+###set the working directory where all the dataset are located (IPUMS, Second level Administrative Shapefile, AUE Study area)
+setwd("   ")
 
 ###loading data and correcting projection
 geo2_91 <- read_sf("geo2_ar1991.shp")
@@ -58,15 +60,11 @@ geo_argentina_91$IPUM1991 <- as.integer(geo_argentina_91$IPUM1991)
 geo_argentina_01$IPUM2001 <- as.integer(geo_argentina_01$IPUM2001)
 geo_argentina_10$IPUM2010 <- as.integer(geo_argentina_10$IPUM2010)
 
-
-
 ##Joining by year
 
 argentina_91 <- argentina %>% inner_join(geo_argentina_91, by="IPUM1991")
 argentina_01 <- argentina %>% inner_join(geo_argentina_01, by="IPUM2001")
 argentina_10 <- argentina %>% inner_join(geo_argentina_10, by="IPUM2010")
-
-
 
 names(argentina_91)
 names(argentina_01)
@@ -76,7 +74,6 @@ argentina_91 <- select(argentina_91, -c(DEPT1991))
 argentina_01 <- select(argentina_01, -c(DEPT2001))
 argentina_10 <- select(argentina_10, -c(DEPT2010))
 
-
 ##Merging all years into one table
 argentina_full <- rbind(argentina_91,argentina_01,argentina_10)
 names(argentina_full)
@@ -84,6 +81,8 @@ names(argentina_full)
 ##Excluding specific columns for the unifeied dataset
 argentina_full<- select(argentina_full, -c(GEO2_AR1991,GEO2_AR2001,GEO2_AR2010,IPUM1991,IPUM2001,IPUM2010))
 table(argentina_full$CITY)
+
+##Creating the input file for merging
 save(argentina_full,file="argentina_full.Rda")
 
 
