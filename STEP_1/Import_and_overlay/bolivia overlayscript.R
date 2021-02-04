@@ -1,7 +1,11 @@
 library(sf)
 library(tidyverse)
 library(dplyr)
-setwd("C:/Users/Gebruiker/Dropbox/Countriesoverlay David/overlay bolivia")
+library(ipumsr)
+library(ggplot2)
+
+###set the working directory where all the dataset are located (IPUMS, Second level Administrative Shapefile, AUE Study area)
+setwd("   ")
 
 geo2_bo1992 <- read_sf("geo2_bo1992.shp")
 geo2_bo2001 <- read_sf("geo2_bo2001.shp")
