@@ -1,8 +1,11 @@
 library(sf)
 library(tidyverse)
 library(dplyr)
-library(tmap)
-setwd("C:/Users/Gebruiker/Documents/VIDI/microdata/indonesia/indonesia/overlayindonesia")
+library(ipumsr)
+library(ggplot2)
+
+###set the working directory where all the dataset are located (IPUMS, Second level Administrative Shapefile, AUE Study area)
+setwd("   ")
 
 geo2_in90 <- read_sf("geo2_id1990.shp")
 geo2_in00 <- read_sf("geo2_id2000.shp")
