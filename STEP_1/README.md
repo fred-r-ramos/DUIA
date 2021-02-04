@@ -1,4 +1,4 @@
-# Description of IPUMS_International data extraction.
+# Data selection and extraction
 
 The first step consists in the extraction and integration of the datasets in the IPUMS international and the Atlas of Urban Expansion. 
 The folder **Description_IPUMS_Extractions** contains the description of the data extracted form the IPUMS International. 
