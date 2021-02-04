@@ -3,7 +3,10 @@ library(tidyverse)
 library(dplyr)
 library(ipumsr)
 library(ggplot2)
-setwd("C:/Users/Gebruiker/Dropbox/Countriesoverlay David/overlay morocco")
+
+###set the working directory where all the dataset are located (IPUMS, Second level Administrative Shapefile, AUE Study area)
+setwd("   ")
+
 geo2_ma82 <- read_sf("geo2_ma1982.shp")
 geo2_ma94 <- read_sf("geo2_ma1994.shp")
 geo2_ma04 <- read_sf("geo2_ma2004.shp")
