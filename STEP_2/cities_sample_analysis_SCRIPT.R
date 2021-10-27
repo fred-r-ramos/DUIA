@@ -8,13 +8,13 @@ library(leaflet)
 
 
 getwd()
-setwd("C:/Users/fredr/Dropbox/B_POSTDOC_UvA/Cities_Sample/ATLAS_URB_EXPANS/Data/0_CITIES_DATAFRAMES")
+setwd("C:/workingdirectory")
 
 ##loading dataframe
 
-load("C:/Users/fredr/Dropbox/B_POSTDOC_UvA/Cities_Sample/ATLAS_URB_EXPANS/Data/0_CITIES_DATAFRAMES/cities_full_sample.Rda")
+load("C:/workingdirectory/cities_full_sample.Rda")
 
-load("C:/Users/fredr/Dropbox/B_POSTDOC_UvA/Cities_Sample/ATLAS_URB_EXPANS/Data/0_CITIES_DATAFRAMES/aue_edit.Rda")
+load("C:/workingdirectory/aue_edit.Rda")
 
 ##creating a columns with the datatime for AUE comparison 
 
