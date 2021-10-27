@@ -10,7 +10,7 @@ library(gridExtra)
 
 
 getwd()
-setwd("C:/Users/fredr/Dropbox/B_POSTDOC_UvA/household_asset_index/inequality_index")
+setwd("C:/")
 
 ###########################################calculating for Argentina
 ###########################################import IPUMS
